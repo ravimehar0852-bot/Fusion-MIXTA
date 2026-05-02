@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fusion Mixta – Coronel, Chile</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">Fusion<span>Mixta</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"    class="nav-link">Home</a></li>
+        <li><a href="#menu"    class="nav-link">Menu</a></li>
+        <li><a href="#about"   class="nav-link">About</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ HOME ============ -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Est. Coronel, Chile</p>
+      <h1 class="hero-title">Where Every<br/><em>Bite Tells</em><br/>a Story</h1>
+      <p class="hero-sub">Fresh, handcrafted food made with love and local ingredients — dine in or take away.</p>
+      <div class="hero-cta">
+        <a href="#menu" class="btn btn-primary">Explore Menu</a>
+        <a href="#contact" class="btn btn-outline">Find Us</a>
+      </div>
+      <div class="hero-badges">
+        <div class="badge"><i class="fas fa-star"></i> 5.0 Rating</div>
+        <div class="badge"><i class="fas fa-comments"></i> 61 Reviews</div>
+        <div class="badge"><i class="fas fa-leaf"></i> Fresh Daily</div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint"><span></span></div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Our Menu</p>
+        <h2 class="section-title">Crafted with Passion</h2>
+        <p class="section-desc">Every dish is made fresh using quality ingredients. Prices reflect our commitment to value without compromise.</p>
+      </div>
+
+      <div class="menu-tabs" id="menuTabs">
+        <button class="tab-btn active" data-tab="mains">Mains</button>
+        <button class="tab-btn" data-tab="sides">Sides</button>
+        <button class="tab-btn" data-tab="drinks">Drinks</button>
+        <button class="tab-btn" data-tab="desserts">Desserts</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <!-- Mains -->
+        <div class="menu-card" data-cat="mains">
+          <div class="menu-card-img" style="background:#c4854a;">🥩</div>
+          <div class="menu-card-body">
+            <h3>Steak de la Casa</h3>
+            <p>Juicy, perfectly seasoned steak served with natural fries and house salad.</p>
+            <span class="menu-price">$8,500</span>
+          </div>
+        </div>
+        <div class="menu-card" data-cat="mains">
+          <div class="menu-card-img" style="background:#b97c3d;">🍗</div>
+          <div class="menu-card-body">
+            <h3>Pollo Fusion</h3>
+            <p>Grilled chicken breast with a secret blend of spices, rice and vegetables.</p>
+            <span class="menu-price">$7,000</span>
+          </div>
+        </div>
+        <div class="menu-card" data-cat="mains">
+          <div class="menu-card-img" style="background:#d4956a;">🐟</div>
+          <div class="menu-card-body">
+            <h3>Pescado del Día</h3>
+            <p>Daily fresh catch pan-seared with herbs, lemon butter and seasonal sides.</p>
+            <span class="menu-price">$9,000</span>
+          </div>
+        </div>
+        <div class="menu-card" data-cat="mains">
+          <div class="menu-card-img" style="background:#c88540;">🍔</div>
+          <div class="menu-card-body">
+            <h3>Burger Mixta</h3>
+            <p>Double patty smash burger with caramelized onions, cheddar and special sauce.</p>
+            <span class="menu-price">$6,500</span>
+          </div>
+        </div>
+
+        <!-- Sides -->
+        <div class="menu-card" data-cat="sides" style="display:none;">
+          <div class="menu-card-img" style="background:#c4a060;">🍟</div>
+          <div class="menu-card-body">
+            <h3>Natural Fries</h3>
+            <p>Hand-cut, twice-fried golden potato fries with sea salt.</p>
+            <span class="menu-price">$2,500</span>
+          </div>
+        </div>
+        <div class="menu-card" data-cat="sides" style="display:none;">
+          <div class="menu-card-img" style="background:#a8b87a;">🥗</div>
+          <div class="menu-card-body">
+            <h3>Ensalada Fresca</h3>
+            <p>Crisp seasonal greens with tomato, cucumber and house vinaigrette.</p>
+            <span class="menu-price">$2,000</span>
+          </div>
+        </div>
+        <div class="menu-card" data-cat="sides" style="display:none;">
+          <div class="menu-card-img" style="background:#c4956a;">🍞</div>
+          <div class="menu-card-body">
+            <h3>Pan Artesanal</h3>
+            <p>Freshly baked artisanal bread with herb butter.</p>
+            <span class="menu-price">$1,500</span>
+          </div>
+        </div>
+
+        <!-- Drinks -->
+        <div class="menu-card" data-cat="drinks" style="display:none;">
+          <div class="menu-card-img" style="background:#7ab8c4;">🧃</div>
+          <div class="menu-card-body">
+            <h3>Jugo Natural</h3>
+            <p>Freshly squeezed seasonal fruit juice, no added sugar.</p>
+            <span class="menu-price">$2,000</span>
+          </div>
+        </div>
+        <div class="menu-card" data-cat="drinks" style="display:none;">
+          <div class="menu-card-img" style="background:#a07ab8;">☕</div>
+          <div class="menu-card-body">
+            <h3>Café de Olla</h3>
+            <p>Traditional slow-brewed coffee with cinnamon and piloncillo.</p>
+            <span class="menu-price">$1,800</span>
+          </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-card" data-cat="desserts" style="display:none;">
+          <div class="menu-card-img" style="background:#c47a8a;">🍮</div>
+          <div class="menu-card-body">
+            <h3>Flan Casero</h3>
+            <p>Classic homemade caramel flan, silky smooth and golden.</p>
+            <span class="menu-price">$2,500</span>
+          </div>
+        </div>
+        <div class="menu-card" data-cat="desserts" style="display:none;">
+          <div class="menu-card-img" style="background:#c49060;">🍰</div>
+          <div class="menu-card-body">
+            <h3>Torta del Día</h3>
+            <p>Daily rotating homemade cake slice. Ask your server what's fresh!</p>
+            <span class="menu-price">$2,000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section section-warm" id="about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <p class="section-eyebrow">Our Story</p>
+        <h2 class="section-title">A Fusion Born<br/>from the Heart</h2>
+        <p>Fusion Mixta started as a dream to bring bold, honest flavors to the streets of Coronel. Located on JM Erratchou 826, we've built a place where neighbors become regulars and first-timers always leave wanting more.</p>
+        <p>Our kitchen operates on a simple principle: use the freshest local ingredients, treat every dish with care, and serve every customer like family. We're proud of our 5-star reputation — and we earn it every single day.</p>
+        <div class="about-stats">
+          <div class="stat"><span>5.0</span><label>Google Rating</label></div>
+          <div class="stat"><span>61+</span><label>Happy Reviews</label></div>
+          <div class="stat"><span>100%</span><label>Fresh Daily</label></div>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="about-card about-card--1">
+          <i class="fas fa-fire"></i>
+          <h4>Made Fresh</h4>
+          <p>Cooked to order, every time. No reheating, no shortcuts.</p>
+        </div>
+        <div class="about-card about-card--2">
+          <i class="fas fa-heart"></i>
+          <h4>Made with Love</h4>
+          <p>You can taste the dedication in every single dish.</p>
+        </div>
+        <div class="about-card about-card--3">
+          <i class="fas fa-map-marker-alt"></i>
+          <h4>Local Pride</h4>
+          <p>Proudly serving Coronel, Bío Bío since day one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Gallery</p>
+        <h2 class="section-title">Taste with Your Eyes</h2>
+        <p class="section-desc">A glimpse of the flavors, the space, and the love that goes into Fusion Mixta.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item gi-large" style="background: linear-gradient(135deg,#c4854a,#8b4513);">
+          <div class="gi-overlay"><span>Our Signature Steak</span></div>
+          <div class="gi-emoji">🥩</div>
+        </div>
+        <div class="gallery-item" style="background: linear-gradient(135deg,#d4956a,#c47a30);">
+          <div class="gi-overlay"><span>Natural Fries</span></div>
+          <div class="gi-emoji">🍟</div>
+        </div>
+        <div class="gallery-item" style="background: linear-gradient(135deg,#8b6914,#c4a060);">
+          <div class="gi-overlay"><span>Fresh Juices</span></div>
+          <div class="gi-emoji">🧃</div>
+        </div>
+        <div class="gallery-item" style="background: linear-gradient(135deg,#a07ab8,#7a5a8a);">
+          <div class="gi-overlay"><span>Coffee Corner</span></div>
+          <div class="gi-emoji">☕</div>
+        </div>
+        <div class="gallery-item gi-tall" style="background: linear-gradient(135deg,#6a8a4a,#4a6a2a);">
+          <div class="gi-overlay"><span>Ensalada Fresca</span></div>
+          <div class="gi-emoji">🥗</div>
+        </div>
+        <div class="gallery-item" style="background: linear-gradient(135deg,#c47a8a,#8a4a5a);">
+          <div class="gi-overlay"><span>Desserts of the Day</span></div>
+          <div class="gi-emoji">🍮</div>
+        </div>
+        <div class="gallery-item" style="background: linear-gradient(135deg,#4a7ab8,#2a5a8a);">
+          <div class="gi-overlay"><span>Burger Mixta</span></div>
+          <div class="gi-emoji">🍔</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section class="section section-warm reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Reviews</p>
+        <h2 class="section-title">What People Say</h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"The steak was very well prepared and tasty, and I was happy to find a place with natural fries. We were eager to try other dishes because they looked delicious too."</p>
+          <div class="reviewer">— Ailynne Rojas</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Wonderful, exquisite food, perfect service. Everything is fresh, and you can taste the dedication in every dish. A place I would return to without hesitation."</p>
+          <div class="reviewer">— Daniela Martinez</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"It's a fantastic find! The food is exquisite and very reasonably priced. I was surprised by the variety of products, and the service is incredibly friendly. We'll definitely be back!"</p>
+          <div class="reviewer">— Maria Jose Mella</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Find Us</p>
+        <h2 class="section-title">Come Visit</h2>
+        <p class="section-desc">We're open and ready to serve you. Stop by or give us a call!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Address</h4>
+              <p>JM Erratchou 826<br/>Coronel, Bío Bío, Chile</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone / WhatsApp</h4>
+              <p><a href="https://wa.me/56976356958" target="_blank">+56 9 7635 6958</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4>Hours</h4>
+              <p>Open daily — closes 5 PM</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-utensils"></i>
+            <div>
+              <h4>Options</h4>
+              <p>Dine-in · Takeaway</p>
+            </div>
+          </div>
+          <a href="https://wa.me/56976356958?text=Hello!%20I'd%20like%20to%20make%20a%20reservation%20at%20Fusion%20Mixta." class="btn btn-primary contact-wa-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+        <div class="contact-map">
+          <iframe
+            title="Fusion Mixta Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3054.5!2d-73.1452!3d-37.0296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDAyJzA3LjAiUyA3M8KwMDgnNDMuMiJX!5e0!3m2!1sen!2scl!4v1700000000000"
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo">Fusion<span>Mixta</span></a>
+        <p>Handcrafted food with heart.<br/>Coronel, Chile 🇨🇱</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Fusion Mixta · JM Erratchou 826, Coronel · All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ WHATSAPP FLOATING BUTTON ============ -->
+  <!--
+    ╔══════════════════════════════════════════════╗
+    ║   WHATSAPP FLOATING BUTTON — insert here     ║
+    ║   (just before closing </body> tag)          ║
+    ╚══════════════════════════════════════════════╝
+  -->
+  <a
+    href="https://wa.me/56976356958?text=Hello!%20I'd%20like%20to%20know%20more%20about%20Fusion%20Mixta."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat on WhatsApp"
+  >
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-tooltip">Chat with us!</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
